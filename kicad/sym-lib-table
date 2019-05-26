@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name project_symbols)(type Legacy)(uri /home/georg/Dokumente/ET_DIY/Projekte/E-Bollerwagen/handcart_battery_protection/kicad/project_symbols.lib)(options "")(descr ""))
+  (lib (name project-symbols)(type Legacy)(uri /home/georg/Dokumente/ET_DIY/Projekte/E-Bollerwagen/handcart-motor-controller-board/KiCad-Project/project-symbols.lib)(options "")(descr ""))
 )

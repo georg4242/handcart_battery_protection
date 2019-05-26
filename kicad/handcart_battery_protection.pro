@@ -1,4 +1,4 @@
-update=Fr 10 Mai 2019 18:59:34 CEST
+update=Mo 13 Mai 2019 01:18:01 CEST
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=handcart_battery_protection2
+PlotDirectoryName=handcart_battery_protection_plot
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

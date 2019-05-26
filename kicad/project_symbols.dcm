@@ -6,6 +6,12 @@ K MOSFET Output Photorelay 1-Form-A
 F https://docs.broadcom.com/docs/AV02-0173EN
 $ENDCMP
 #
+$CMP EE2-12NU-L
+D Standex Meder DIP reed relay, SPST, Closing Contact
+K Single Pole Reed Relay SPST
+F https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf
+$ENDCMP
+#
 $CMP INA2181
 D High-Accuracy, Wide Common-Mode Range, Bidirectional Current Shunt Monitors, Zero-Drift Series, 50V/V, SOIC-8/VSSOP-8
 K current monitor shunt sensor bidirectional
