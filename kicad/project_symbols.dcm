@@ -18,6 +18,12 @@ K current monitor shunt sensor bidirectional
 F http://www.ti.com/lit/ds/symlink/ina282.pdf
 $ENDCMP
 #
+$CMP INA4181
+D High-Accuracy, Wide Common-Mode Range, Bidirectional Current Shunt Monitors, Zero-Drift Series, 50V/V, SOIC-8/VSSOP-8
+K current monitor shunt sensor bidirectional
+F http://www.ti.com/lit/ds/symlink/ina282.pdf
+$ENDCMP
+#
 $CMP relay
 D Standex Meder DIP reed relay, SPST, Closing Contact
 K Single Pole Reed Relay SPST

@@ -1,0 +1,99 @@
+EESchema Schematic File Version 4
+LIBS:handcart_battery_protection-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Buzzer BZ?
+U 1 1 5D555677
+P 3225 2150
+AR Path="/5D555677" Ref="BZ?"  Part="1" 
+AR Path="/5D555572/5D555677" Ref="BZ?"  Part="1" 
+F 0 "BZ?" H 3378 2179 50  0000 L CNN
+F 1 "Sound_Alarm_Buzzer" H 3378 2088 50  0000 L CNN
+F 2 "" V 3200 2250 50  0001 C CNN
+F 3 "~" V 3200 2250 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/soberton-inc/WT-1212/433-1285-ND/9924446" H 3225 2150 50  0001 C CNN "Distributor_link"
+	1    3225 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D55567E
+P 4150 2125
+AR Path="/5D55567E" Ref="C?"  Part="1" 
+AR Path="/5D555572/5D55567E" Ref="C?"  Part="1" 
+F 0 "C?" H 4265 2171 50  0000 L CNN
+F 1 "100n" H 4265 2080 50  0000 L CNN
+F 2 "" H 4188 1975 50  0001 C CNN
+F 3 "~" H 4150 2125 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 0   0   50  0001 C CNN "Distributor_link"
+	1    4150 2125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D555685
+P 3725 3025
+AR Path="/5D555685" Ref="#PWR?"  Part="1" 
+AR Path="/5D555572/5D555685" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3725 2775 50  0001 C CNN
+F 1 "GND" H 3730 2852 50  0000 C CNN
+F 2 "" H 3725 3025 50  0001 C CNN
+F 3 "" H 3725 3025 50  0001 C CNN
+	1    3725 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2275 4150 2850
+Wire Wire Line
+	4150 1800 4150 1975
+Wire Wire Line
+	3325 1800 3325 2050
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5D55568F
+P 3225 2650
+AR Path="/5D55568F" Ref="Q?"  Part="1" 
+AR Path="/5D555572/5D55568F" Ref="Q?"  Part="1" 
+F 0 "Q?" H 3875 2700 50  0000 L CNN
+F 1 "RTF016N05TL‎" H 3475 2600 50  0000 L CNN
+F 2 "" H 3425 2750 50  0001 C CNN
+F 3 "~" H 3225 2650 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/RTF016N05TL/RTF016N05TLCT-ND/5042583/?itemSeq=293786433" H 3225 2650 50  0001 C CNN "Distributor_link"
+	1    3225 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 2850 3725 2850
+Wire Wire Line
+	3725 2850 3725 3025
+Connection ~ 3725 2850
+Wire Wire Line
+	3725 2850 4150 2850
+Wire Wire Line
+	2475 2650 3025 2650
+Text Notes 1800 1575 0    79   ~ 0
+Sound alarm buzzer
+Wire Wire Line
+	3325 2250 3325 2450
+Text HLabel 2475 2650 0    50   Input ~ 0
+buzzer_pwm
+Wire Wire Line
+	3325 1800 4150 1800
+Text Label 3475 1800 0    50   ~ 0
+12V_switchable
+Text Notes 2375 2825 0    50   ~ 0
+2.4 kHz rated freq
+$EndSCHEMATC
