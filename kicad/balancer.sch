@@ -332,76 +332,8 @@ F 3 "~" H 5100 2450 50  0001 C CNN
 	1    5100 2450
 	0    -1   -1   0   
 $EndComp
-Text Notes 8800 3300 0    79   ~ 0
+Text Notes 8850 3300 0    79   ~ 0
 Imax = +-6A
-$Comp
-L Device:C C14
-U 1 1 5CEBEBB3
-P 9200 2750
-F 0 "C14" H 9315 2796 50  0000 L CNN
-F 1 "22u/25V" H 9315 2705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 9238 2600 50  0001 C CNN
-F 3 "~" H 9200 2750 50  0001 C CNN
-	1    9200 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C16
-U 1 1 5CEBECBF
-P 9800 2750
-F 0 "C16" H 9915 2796 50  0000 L CNN
-F 1 "22u/25V" H 9915 2705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 9838 2600 50  0001 C CNN
-F 3 "~" H 9800 2750 50  0001 C CNN
-	1    9800 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C18
-U 1 1 5CEBED0D
-P 10400 2750
-F 0 "C18" H 10515 2796 50  0000 L CNN
-F 1 "22u/25V" H 10515 2705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 10438 2600 50  0001 C CNN
-F 3 "~" H 10400 2750 50  0001 C CNN
-	1    10400 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 5CEBEDE7
-P 9200 3650
-F 0 "C15" H 9315 3696 50  0000 L CNN
-F 1 "22u/25V" H 9315 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 9238 3500 50  0001 C CNN
-F 3 "~" H 9200 3650 50  0001 C CNN
-	1    9200 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C17
-U 1 1 5CEBEDED
-P 9800 3650
-F 0 "C17" H 9915 3696 50  0000 L CNN
-F 1 "22u/25V" H 9915 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 9838 3500 50  0001 C CNN
-F 3 "~" H 9800 3650 50  0001 C CNN
-	1    9800 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C19
-U 1 1 5CEBEDF3
-P 10400 3650
-F 0 "C19" H 10515 3696 50  0000 L CNN
-F 1 "22u/25V" H 10515 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 10438 3500 50  0001 C CNN
-F 3 "~" H 10400 3650 50  0001 C CNN
-	1    10400 3650
-	1    0    0    -1  
-$EndComp
-Text Notes 9150 2350 0    50   ~ 0
-Add cap footprints close to \nsense resistor, inductor and mosfets. \nUsed to prevent steep current edges \non the wires. May not be necessary.
 $Comp
 L power:GND #PWR039
 U 1 1 5CECDAF5
@@ -417,16 +349,4 @@ Wire Wire Line
 	2300 3975 2300 3850
 Wire Wire Line
 	2300 3850 2550 3850
-NoConn ~ 9200 2600
-NoConn ~ 9200 2900
-NoConn ~ 9800 2600
-NoConn ~ 9800 2900
-NoConn ~ 10400 2900
-NoConn ~ 10400 2600
-NoConn ~ 9200 3500
-NoConn ~ 9800 3500
-NoConn ~ 9800 3800
-NoConn ~ 9200 3800
-NoConn ~ 10400 3800
-NoConn ~ 10400 3500
 $EndSCHEMATC

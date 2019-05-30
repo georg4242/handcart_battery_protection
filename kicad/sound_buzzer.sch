@@ -82,8 +82,6 @@ Wire Wire Line
 Connection ~ 3725 2850
 Wire Wire Line
 	3725 2850 4150 2850
-Wire Wire Line
-	2475 2650 3025 2650
 Text Notes 1800 1575 0    79   ~ 0
 Sound alarm buzzer
 Wire Wire Line
@@ -94,6 +92,52 @@ Wire Wire Line
 	3325 1800 4150 1800
 Text Label 3475 1800 0    50   ~ 0
 12V_switchable
-Text Notes 2375 2825 0    50   ~ 0
+Text Notes 2475 1925 0    50   ~ 0
 2.4 kHz rated freq
+$Comp
+L Device:R R?
+U 1 1 5CF393BD
+P 2925 2900
+F 0 "R?" H 2995 2946 50  0000 L CNN
+F 1 "100k" H 2995 2855 50  0000 L CNN
+F 2 "" V 2855 2900 50  0001 C CNN
+F 3 "~" H 2925 2900 50  0001 C CNN
+	1    2925 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF39403
+P 2700 2650
+F 0 "R?" V 2493 2650 50  0000 C CNN
+F 1 "100" V 2584 2650 50  0000 C CNN
+F 2 "" V 2630 2650 50  0001 C CNN
+F 3 "~" H 2700 2650 50  0001 C CNN
+	1    2700 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 2650 2475 2650
+Wire Wire Line
+	2850 2650 2925 2650
+Wire Wire Line
+	2925 2650 2925 2750
+Connection ~ 2925 2650
+Wire Wire Line
+	2925 2650 3025 2650
+Wire Wire Line
+	2925 3050 2925 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5CF3967D
+P 2925 3100
+AR Path="/5CF3967D" Ref="#PWR?"  Part="1" 
+AR Path="/5D555572/5CF3967D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2925 2850 50  0001 C CNN
+F 1 "GND" H 2930 2927 50  0000 C CNN
+F 2 "" H 2925 3100 50  0001 C CNN
+F 3 "" H 2925 3100 50  0001 C CNN
+	1    2925 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

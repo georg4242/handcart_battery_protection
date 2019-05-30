@@ -410,7 +410,7 @@ Connection ~ 2975 4400
 Wire Wire Line
 	2975 4400 3000 4400
 Text HLabel 2500 3850 0    50   Input ~ 0
-2nd_Bat_low
+12V
 Text HLabel 2500 4400 0    50   Input ~ 0
 24V_Bat
 Text HLabel 4525 4300 2    50   Output ~ 0
@@ -419,19 +419,8 @@ Text HLabel 2275 6200 0    50   Input ~ 0
 12V_rail
 Text HLabel 4300 6100 2    50   Output ~ 0
 24V_sense
-$Comp
-L power:+24V #PWR018
-U 1 1 5D55C549
-P 2000 4525
-F 0 "#PWR018" H 2000 4375 50  0001 C CNN
-F 1 "+24V" H 2015 4698 50  0000 C CNN
-F 2 "" H 2000 4525 50  0001 C CNN
-F 3 "" H 2000 4525 50  0001 C CNN
-	1    2000 4525
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2000 4525 2650 4525
+	2500 4525 2650 4525
 $Comp
 L Device:R R?
 U 1 1 5D6768E4
@@ -493,4 +482,6 @@ Wire Wire Line
 Connection ~ 2750 1975
 Wire Wire Line
 	2750 1975 2925 1975
+Text HLabel 2500 4525 0    50   Input ~ 0
+24V_switchable
 $EndSCHEMATC

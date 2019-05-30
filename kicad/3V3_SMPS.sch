@@ -118,53 +118,51 @@ Wire Wire Line
 	3325 2100 3050 2100
 Connection ~ 3050 2100
 Wire Wire Line
-	3825 2100 3825 2025
+	4825 2100 4825 2025
 $Comp
 L Device:R R?
 U 1 1 5D5B5EE4
-P 3250 2500
+P 4100 2850
 AR Path="/5D5B5EE4" Ref="R?"  Part="1" 
 AR Path="/5D5AF20E/5D5B5EE4" Ref="R29"  Part="1" 
-F 0 "R29" H 3320 2546 50  0000 L CNN
-F 1 "10k" H 3320 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 2500 50  0001 C CNN
-F 3 "~" H 3250 2500 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/de/PTN0603E8002BST1/764-1457-1-ND/7103241/?itemSeq=293787342" H -750 200 50  0001 C CNN "Distributor_link"
-	1    3250 2500
-	0    -1   -1   0   
+F 0 "R29" H 4170 2896 50  0000 L CNN
+F 1 "10k" H 4170 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 2850 50  0001 C CNN
+F 3 "~" H 4100 2850 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/PTN0603E8002BST1/764-1457-1-ND/7103241/?itemSeq=293787342" H 100 550 50  0001 C CNN "Distributor_link"
+	1    4100 2850
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5D5B5F00
-P 3825 2625
+P 4825 2850
 AR Path="/5D5B5F00" Ref="C?"  Part="1" 
 AR Path="/5D5AF20E/5D5B5F00" Ref="C11"  Part="1" 
-F 0 "C11" H 3940 2671 50  0000 L CNN
-F 1 "22u/25V" H 3940 2580 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3863 2475 50  0001 C CNN
-F 3 "~" H 3825 2625 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL21A226MOCLRNC/1276-6780-1-ND/5961639" H -775 0   50  0001 C CNN "Distributor_link"
-	1    3825 2625
+F 0 "C11" H 4940 2896 50  0000 L CNN
+F 1 "22u/25V" H 4940 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4863 2700 50  0001 C CNN
+F 3 "~" H 4825 2850 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL21A226MOCLRNC/1276-6780-1-ND/5961639" H 225 225 50  0001 C CNN "Distributor_link"
+	1    4825 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3825 2475 3825 2375
-Connection ~ 3825 2100
+Connection ~ 4825 2100
 $Comp
 L power:GND #PWR?
 U 1 1 5D5B5F09
-P 3825 2925
+P 4825 3150
 AR Path="/5D5B5F09" Ref="#PWR?"  Part="1" 
 AR Path="/5D5AF20E/5D5B5F09" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 3825 2675 50  0001 C CNN
-F 1 "GND" H 3830 2752 50  0000 C CNN
-F 2 "" H 3825 2925 50  0001 C CNN
-F 3 "" H 3825 2925 50  0001 C CNN
-	1    3825 2925
+F 0 "#PWR038" H 4825 2900 50  0001 C CNN
+F 1 "GND" H 4830 2977 50  0000 C CNN
+F 2 "" H 4825 3150 50  0001 C CNN
+F 3 "" H 4825 3150 50  0001 C CNN
+	1    4825 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3825 2775 3825 2925
+	4825 3000 4825 3150
 Text Notes 3525 1700 0    50   ~ 0
 max. 600mA load possible
 Text HLabel 1675 1700 0    50   Input ~ 0
@@ -172,27 +170,63 @@ uC_VDD
 Text Notes 2150 2775 0    50   ~ 0
 fixed 3.3V output version
 Wire Wire Line
-	3625 2100 3825 2100
+	3625 2100 4100 2100
 Wire Wire Line
-	2925 2500 3100 2500
-Wire Wire Line
-	3400 2500 3600 2500
-Wire Wire Line
-	3600 2500 3600 2375
-Wire Wire Line
-	3600 2375 3825 2375
-Connection ~ 3825 2375
-Wire Wire Line
-	3825 2375 3825 2100
+	3600 2600 4100 2600
 $Comp
 L power:+3.3V #PWR037
 U 1 1 5CF1CADF
-P 3825 2025
-F 0 "#PWR037" H 3825 1875 50  0001 C CNN
-F 1 "+3.3V" H 3840 2198 50  0000 C CNN
-F 2 "" H 3825 2025 50  0001 C CNN
-F 3 "" H 3825 2025 50  0001 C CNN
-	1    3825 2025
+P 4825 2025
+F 0 "#PWR037" H 4825 1875 50  0001 C CNN
+F 1 "+3.3V" H 4840 2198 50  0000 C CNN
+F 2 "" H 4825 2025 50  0001 C CNN
+F 3 "" H 4825 2025 50  0001 C CNN
+	1    4825 2025
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4100 3000 4100 3075
+$Comp
+L power:GND #PWR?
+U 1 1 5D0D02A9
+P 4100 3075
+AR Path="/5D0D02A9" Ref="#PWR?"  Part="1" 
+AR Path="/5D5AF20E/5D0D02A9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4100 2825 50  0001 C CNN
+F 1 "GND" H 4105 2902 50  0000 C CNN
+F 2 "" H 4100 3075 50  0001 C CNN
+F 3 "" H 4100 3075 50  0001 C CNN
+	1    4100 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2500 3600 2600
+Wire Wire Line
+	2925 2500 3600 2500
+$Comp
+L Device:R R?
+U 1 1 5D0D0875
+P 4100 2375
+AR Path="/5D0D0875" Ref="R?"  Part="1" 
+AR Path="/5D5AF20E/5D0D0875" Ref="R?"  Part="1" 
+F 0 "R?" H 4170 2421 50  0000 L CNN
+F 1 "23.7k" H 4170 2330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 2375 50  0001 C CNN
+F 3 "~" H 4100 2375 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/PTN0603E8002BST1/764-1457-1-ND/7103241/?itemSeq=293787342" H 100 75  50  0001 C CNN "Distributor_link"
+	1    4100 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2100 4100 2225
+Connection ~ 4100 2100
+Wire Wire Line
+	4100 2100 4825 2100
+Wire Wire Line
+	4100 2525 4100 2600
+Connection ~ 4100 2600
+Wire Wire Line
+	4100 2600 4100 2700
+Wire Wire Line
+	4825 2100 4825 2700
 $EndSCHEMATC
