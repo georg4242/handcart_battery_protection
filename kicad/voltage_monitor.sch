@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -21,10 +21,10 @@ L Amplifier_Operational:LMC6482 U?
 U 1 1 5D4ED45B
 P 3775 4300
 AR Path="/5D4ED45B" Ref="U?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED45B" Ref="U?"  Part="1" 
-F 0 "U?" H 3775 4025 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED45B" Ref="U4"  Part="1" 
+F 0 "U4" H 3775 4025 50  0000 C CNN
 F 1 "LMC6482" H 3875 4125 50  0000 C CNN
-F 2 "" H 3775 4300 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3775 4300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 3775 4300 50  0001 C CNN
 	1    3775 4300
 	1    0    0    1   
@@ -34,10 +34,10 @@ L Amplifier_Operational:LMC6482 U?
 U 2 1 5D4ED462
 P 3500 6100
 AR Path="/5D4ED462" Ref="U?"  Part="2" 
-AR Path="/5D4ECE6C/5D4ED462" Ref="U?"  Part="2" 
-F 0 "U?" H 3500 5733 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED462" Ref="U4"  Part="2" 
+F 0 "U4" H 3500 5733 50  0000 C CNN
 F 1 "LMC6482" H 3500 5824 50  0000 C CNN
-F 2 "" H 3500 6100 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3500 6100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 3500 6100 50  0001 C CNN
 	2    3500 6100
 	1    0    0    1   
@@ -47,10 +47,10 @@ L Amplifier_Operational:LMC6482 U?
 U 3 1 5D4ED469
 P 3025 2300
 AR Path="/5D4ED469" Ref="U?"  Part="3" 
-AR Path="/5D4ECE6C/5D4ED469" Ref="U?"  Part="3" 
-F 0 "U?" H 2983 2346 50  0000 L CNN
+AR Path="/5D4ECE6C/5D4ED469" Ref="U4"  Part="3" 
+F 0 "U4" H 2983 2346 50  0000 L CNN
 F 1 "LMC6482" H 2983 2255 50  0000 L CNN
-F 2 "" H 3025 2300 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3025 2300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 3025 2300 50  0001 C CNN
 	3    3025 2300
 	1    0    0    -1  
@@ -60,8 +60,8 @@ L power:+2V5 #PWR?
 U 1 1 5D4ED471
 P 2925 4200
 AR Path="/5D4ED471" Ref="#PWR?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED471" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2925 4050 50  0001 C CNN
+AR Path="/5D4ECE6C/5D4ED471" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 2925 4050 50  0001 C CNN
 F 1 "+2V5" H 2940 4373 50  0000 C CNN
 F 2 "" H 2925 4200 50  0001 C CNN
 F 3 "" H 2925 4200 50  0001 C CNN
@@ -73,10 +73,10 @@ L Device:R R?
 U 1 1 5D4ED477
 P 3800 3850
 AR Path="/5D4ED477" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED477" Ref="R?"  Part="1" 
-F 0 "R?" V 3593 3850 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED477" Ref="R24"  Part="1" 
+F 0 "R24" V 3593 3850 50  0000 C CNN
 F 1 "20k" V 3684 3850 50  0000 C CNN
-F 2 "" V 3730 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3730 3850 50  0001 C CNN
 F 3 "~" H 3800 3850 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/yageo/RC0603FR-0720KL/311-20.0KHRCT-ND/729987" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3800 3850
@@ -87,10 +87,10 @@ L Device:R R?
 U 1 1 5D4ED47E
 P 3200 3850
 AR Path="/5D4ED47E" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED47E" Ref="R?"  Part="1" 
-F 0 "R?" V 2993 3850 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED47E" Ref="R21"  Part="1" 
+F 0 "R21" V 2993 3850 50  0000 C CNN
 F 1 "40k" V 3084 3850 50  0000 C CNN
-F 2 "" V 3130 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3130 3850 50  0001 C CNN
 F 3 "~" H 3200 3850 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/vishay-thin-film/PAT0603E4002BST1/PAT40KACT-ND/2278999" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3200 3850
@@ -113,10 +113,10 @@ L Device:R R?
 U 1 1 5D4ED48C
 P 3175 4200
 AR Path="/5D4ED48C" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED48C" Ref="R?"  Part="1" 
-F 0 "R?" V 2968 4200 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED48C" Ref="R20"  Part="1" 
+F 0 "R20" V 2968 4200 50  0000 C CNN
 F 1 "10k" V 3059 4200 50  0000 C CNN
-F 2 "" V 3105 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3105 4200 50  0001 C CNN
 F 3 "~" H 3175 4200 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/susumu/RR0816P-103-D/RR08P10.0KDCT-ND/432748" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3175 4200
@@ -127,10 +127,10 @@ L Device:R R?
 U 1 1 5D4ED493
 P 3150 4400
 AR Path="/5D4ED493" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED493" Ref="R?"  Part="1" 
-F 0 "R?" V 3250 4400 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED493" Ref="R19"  Part="1" 
+F 0 "R19" V 3250 4400 50  0000 C CNN
 F 1 "60k" V 3325 4400 50  0000 C CNN
-F 2 "" V 3080 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 4400 50  0001 C CNN
 F 3 "~" H 3150 4400 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/RMCF0603FT60K4/RMCF0603FT60K4CT-ND/1943106" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3150 4400
@@ -143,10 +143,10 @@ L Device:R R?
 U 1 1 5D4ED49B
 P 3375 4700
 AR Path="/5D4ED49B" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED49B" Ref="R?"  Part="1" 
-F 0 "R?" H 3305 4654 50  0000 R CNN
+AR Path="/5D4ECE6C/5D4ED49B" Ref="R22"  Part="1" 
+F 0 "R22" H 3305 4654 50  0000 R CNN
 F 1 "10k" H 3305 4745 50  0000 R CNN
-F 2 "" V 3305 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3305 4700 50  0001 C CNN
 F 3 "~" H 3375 4700 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/susumu/RR0816P-103-D/RR08P10.0KDCT-ND/432748" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3375 4700
@@ -162,8 +162,8 @@ L power:GND #PWR?
 U 1 1 5D4ED4A5
 P 3375 4925
 AR Path="/5D4ED4A5" Ref="#PWR?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4A5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3375 4675 50  0001 C CNN
+AR Path="/5D4ECE6C/5D4ED4A5" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 3375 4675 50  0001 C CNN
 F 1 "GND" H 3380 4752 50  0000 C CNN
 F 2 "" H 3375 4925 50  0001 C CNN
 F 3 "" H 3375 4925 50  0001 C CNN
@@ -192,8 +192,8 @@ L power:+2V5 #PWR?
 U 1 1 5D4ED4B4
 P 2350 6000
 AR Path="/5D4ED4B4" Ref="#PWR?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4B4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2350 5850 50  0001 C CNN
+AR Path="/5D4ECE6C/5D4ED4B4" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 2350 5850 50  0001 C CNN
 F 1 "+2V5" H 2365 6173 50  0000 C CNN
 F 2 "" H 2350 6000 50  0001 C CNN
 F 3 "" H 2350 6000 50  0001 C CNN
@@ -205,10 +205,10 @@ L Device:R R?
 U 1 1 5D4ED4BA
 P 3525 5650
 AR Path="/5D4ED4BA" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4BA" Ref="R?"  Part="1" 
-F 0 "R?" V 3318 5650 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED4BA" Ref="R23"  Part="1" 
+F 0 "R23" V 3318 5650 50  0000 C CNN
 F 1 "20k" V 3409 5650 50  0000 C CNN
-F 2 "" V 3455 5650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3455 5650 50  0001 C CNN
 F 3 "~" H 3525 5650 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/yageo/RC0603FR-0720KL/311-20.0KHRCT-ND/729987" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3525 5650
@@ -219,10 +219,10 @@ L Device:R R?
 U 1 1 5D4ED4C1
 P 2925 5650
 AR Path="/5D4ED4C1" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4C1" Ref="R?"  Part="1" 
-F 0 "R?" V 2718 5650 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED4C1" Ref="R17"  Part="1" 
+F 0 "R17" V 2718 5650 50  0000 C CNN
 F 1 "40k" V 2809 5650 50  0000 C CNN
-F 2 "" V 2855 5650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2855 5650 50  0001 C CNN
 F 3 "~" H 2925 5650 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/vishay-thin-film/PAT0603E4002BST1/PAT40KACT-ND/2278999" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2925 5650
@@ -245,10 +245,10 @@ L Device:R R?
 U 1 1 5D4ED4CF
 P 2900 6000
 AR Path="/5D4ED4CF" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4CF" Ref="R?"  Part="1" 
-F 0 "R?" V 2693 6000 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED4CF" Ref="R16"  Part="1" 
+F 0 "R16" V 2693 6000 50  0000 C CNN
 F 1 "10k" V 2784 6000 50  0000 C CNN
-F 2 "" V 2830 6000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 6000 50  0001 C CNN
 F 3 "~" H 2900 6000 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/susumu/RR0816P-103-D/RR08P10.0KDCT-ND/432748" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2900 6000
@@ -259,10 +259,10 @@ L Device:R R?
 U 1 1 5D4ED4D6
 P 2875 6200
 AR Path="/5D4ED4D6" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4D6" Ref="R?"  Part="1" 
-F 0 "R?" V 2975 6200 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED4D6" Ref="R15"  Part="1" 
+F 0 "R15" V 2975 6200 50  0000 C CNN
 F 1 "60k" V 3050 6200 50  0000 C CNN
-F 2 "" V 2805 6200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2805 6200 50  0001 C CNN
 F 3 "~" H 2875 6200 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/RMCF0603FT60K4/RMCF0603FT60K4CT-ND/1943106" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2875 6200
@@ -275,10 +275,10 @@ L Device:R R?
 U 1 1 5D4ED4DE
 P 3100 6500
 AR Path="/5D4ED4DE" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4DE" Ref="R?"  Part="1" 
-F 0 "R?" H 3030 6454 50  0000 R CNN
+AR Path="/5D4ECE6C/5D4ED4DE" Ref="R18"  Part="1" 
+F 0 "R18" H 3030 6454 50  0000 R CNN
 F 1 "10k" H 3030 6545 50  0000 R CNN
-F 2 "" V 3030 6500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3030 6500 50  0001 C CNN
 F 3 "~" H 3100 6500 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/susumu/RR0816P-103-D/RR08P10.0KDCT-ND/432748" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3100 6500
@@ -294,8 +294,8 @@ L power:GND #PWR?
 U 1 1 5D4ED4E8
 P 3100 6725
 AR Path="/5D4ED4E8" Ref="#PWR?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4E8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3100 6475 50  0001 C CNN
+AR Path="/5D4ECE6C/5D4ED4E8" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 3100 6475 50  0001 C CNN
 F 1 "GND" H 3105 6552 50  0000 C CNN
 F 2 "" H 3100 6725 50  0001 C CNN
 F 3 "" H 3100 6725 50  0001 C CNN
@@ -324,8 +324,8 @@ L power:GND #PWR?
 U 1 1 5D4ED4F7
 P 2650 5650
 AR Path="/5D4ED4F7" Ref="#PWR?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4F7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2650 5400 50  0001 C CNN
+AR Path="/5D4ECE6C/5D4ED4F7" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 2650 5400 50  0001 C CNN
 F 1 "GND" H 2655 5477 50  0000 C CNN
 F 2 "" H 2650 5650 50  0001 C CNN
 F 3 "" H 2650 5650 50  0001 C CNN
@@ -337,10 +337,10 @@ L Device:C C?
 U 1 1 5D4ED4FD
 P 2575 2250
 AR Path="/5D4ED4FD" Ref="C?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED4FD" Ref="C?"  Part="1" 
-F 0 "C?" H 2690 2296 50  0000 L CNN
+AR Path="/5D4ECE6C/5D4ED4FD" Ref="C5"  Part="1" 
+F 0 "C5" H 2690 2296 50  0000 L CNN
 F 1 "100n" H 2690 2205 50  0000 L CNN
-F 2 "" H 2613 2100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2613 2100 50  0001 C CNN
 F 3 "~" H 2575 2250 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2575 2250
@@ -348,8 +348,6 @@ F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104
 $EndComp
 Wire Wire Line
 	2575 2100 2575 1975
-Wire Wire Line
-	2575 1975 2750 1975
 Wire Wire Line
 	2925 1975 2925 2000
 Wire Wire Line
@@ -361,8 +359,8 @@ L power:GND #PWR?
 U 1 1 5D4ED509
 P 2750 2600
 AR Path="/5D4ED509" Ref="#PWR?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED509" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2750 2350 50  0001 C CNN
+AR Path="/5D4ECE6C/5D4ED509" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 2750 2350 50  0001 C CNN
 F 1 "GND" H 2755 2427 50  0000 C CNN
 F 2 "" H 2750 2600 50  0001 C CNN
 F 3 "" H 2750 2600 50  0001 C CNN
@@ -373,30 +371,14 @@ Connection ~ 2750 2600
 Wire Wire Line
 	2750 2600 2925 2600
 $Comp
-L power:+5V #PWR?
-U 1 1 5D4ED511
-P 2750 1975
-AR Path="/5D4ED511" Ref="#PWR?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED511" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2750 1825 50  0001 C CNN
-F 1 "+5V" H 2765 2148 50  0000 C CNN
-F 2 "" H 2750 1975 50  0001 C CNN
-F 3 "" H 2750 1975 50  0001 C CNN
-	1    2750 1975
-	1    0    0    -1  
-$EndComp
-Connection ~ 2750 1975
-Wire Wire Line
-	2750 1975 2925 1975
-$Comp
 L Device:R R?
 U 1 1 5D4ED51A
 P 2800 4400
 AR Path="/5D4ED51A" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED51A" Ref="R?"  Part="1" 
-F 0 "R?" V 2593 4400 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED51A" Ref="R13"  Part="1" 
+F 0 "R13" V 2593 4400 50  0000 C CNN
 F 1 "0" V 2684 4400 50  0000 C CNN
-F 2 "" V 2730 4400 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 2730 4400 50  0001 C CNN
 F 3 "~" H 2800 4400 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/stackpole-electronics-inc/RMCF0603ZT0R00/RMCF0603ZT0R00CT-ND/1943218" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2800 4400
@@ -407,10 +389,10 @@ L Device:R R?
 U 1 1 5D4ED521
 P 2800 4525
 AR Path="/5D4ED521" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D4ED521" Ref="R?"  Part="1" 
-F 0 "R?" V 2900 4525 50  0000 C CNN
+AR Path="/5D4ECE6C/5D4ED521" Ref="R14"  Part="1" 
+F 0 "R14" V 2900 4525 50  0000 C CNN
 F 1 "0" V 2975 4525 50  0000 C CNN
-F 2 "" V 2730 4525 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 2730 4525 50  0001 C CNN
 F 3 "~" H 2800 4525 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/stackpole-electronics-inc/RMCF0603ZT0R00/RMCF0603ZT0R00CT-ND/1943218" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2800 4525
@@ -438,10 +420,10 @@ Text HLabel 2275 6200 0    50   Input ~ 0
 Text HLabel 4300 6100 2    50   Output ~ 0
 24V_sense
 $Comp
-L power:+24V #PWR?
+L power:+24V #PWR018
 U 1 1 5D55C549
 P 2000 4525
-F 0 "#PWR?" H 2000 4375 50  0001 C CNN
+F 0 "#PWR018" H 2000 4375 50  0001 C CNN
 F 1 "+24V" H 2015 4698 50  0000 C CNN
 F 2 "" H 2000 4525 50  0001 C CNN
 F 3 "" H 2000 4525 50  0001 C CNN
@@ -455,10 +437,10 @@ L Device:R R?
 U 1 1 5D6768E4
 P 2525 6200
 AR Path="/5D6768E4" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D6768E4" Ref="R?"  Part="1" 
-F 0 "R?" V 2400 6075 50  0000 C CNN
+AR Path="/5D4ECE6C/5D6768E4" Ref="R11"  Part="1" 
+F 0 "R11" V 2400 6075 50  0000 C CNN
 F 1 "0" V 2475 6050 50  0000 C CNN
-F 2 "" V 2455 6200 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 2455 6200 50  0001 C CNN
 F 3 "~" H 2525 6200 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/stackpole-electronics-inc/RMCF0603ZT0R00/RMCF0603ZT0R00CT-ND/1943218" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2525 6200
@@ -469,10 +451,10 @@ L Device:R R?
 U 1 1 5D6768EB
 P 2525 6325
 AR Path="/5D6768EB" Ref="R?"  Part="1" 
-AR Path="/5D4ECE6C/5D6768EB" Ref="R?"  Part="1" 
-F 0 "R?" V 2625 6325 50  0000 C CNN
+AR Path="/5D4ECE6C/5D6768EB" Ref="R12"  Part="1" 
+F 0 "R12" V 2625 6325 50  0000 C CNN
 F 1 "0" V 2700 6325 50  0000 C CNN
-F 2 "" V 2455 6325 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 2455 6325 50  0001 C CNN
 F 3 "~" H 2525 6325 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/stackpole-electronics-inc/RMCF0603ZT0R00/RMCF0603ZT0R00CT-ND/1943218" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2525 6325
@@ -493,4 +475,22 @@ Wire Wire Line
 	2375 6325 2275 6325
 Text HLabel 2275 6325 0    50   Input ~ 0
 12V_switchable
+Wire Wire Line
+	2575 1975 2750 1975
+$Comp
+L power:+3.3V #PWR021
+U 1 1 5CF22F1F
+P 2750 1900
+F 0 "#PWR021" H 2750 1750 50  0001 C CNN
+F 1 "+3.3V" H 2765 2073 50  0000 C CNN
+F 2 "" H 2750 1900 50  0001 C CNN
+F 3 "" H 2750 1900 50  0001 C CNN
+	1    2750 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1900 2750 1975
+Connection ~ 2750 1975
+Wire Wire Line
+	2750 1975 2925 1975
 $EndSCHEMATC

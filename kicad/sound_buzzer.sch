@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -19,10 +19,10 @@ L Device:Buzzer BZ?
 U 1 1 5D555677
 P 3225 2150
 AR Path="/5D555677" Ref="BZ?"  Part="1" 
-AR Path="/5D555572/5D555677" Ref="BZ?"  Part="1" 
-F 0 "BZ?" H 3378 2179 50  0000 L CNN
+AR Path="/5D555572/5D555677" Ref="BZ1"  Part="1" 
+F 0 "BZ1" H 3378 2179 50  0000 L CNN
 F 1 "Sound_Alarm_Buzzer" H 3378 2088 50  0000 L CNN
-F 2 "" V 3200 2250 50  0001 C CNN
+F 2 "footprints:Sound_Buzzer" V 3200 2250 50  0001 C CNN
 F 3 "~" V 3200 2250 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/soberton-inc/WT-1212/433-1285-ND/9924446" H 3225 2150 50  0001 C CNN "Distributor_link"
 	1    3225 2150
@@ -33,10 +33,10 @@ L Device:C C?
 U 1 1 5D55567E
 P 4150 2125
 AR Path="/5D55567E" Ref="C?"  Part="1" 
-AR Path="/5D555572/5D55567E" Ref="C?"  Part="1" 
-F 0 "C?" H 4265 2171 50  0000 L CNN
+AR Path="/5D555572/5D55567E" Ref="C4"  Part="1" 
+F 0 "C4" H 4265 2171 50  0000 L CNN
 F 1 "100n" H 4265 2080 50  0000 L CNN
-F 2 "" H 4188 1975 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4188 1975 50  0001 C CNN
 F 3 "~" H 4150 2125 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 0   0   50  0001 C CNN "Distributor_link"
 	1    4150 2125
@@ -47,8 +47,8 @@ L power:GND #PWR?
 U 1 1 5D555685
 P 3725 3025
 AR Path="/5D555685" Ref="#PWR?"  Part="1" 
-AR Path="/5D555572/5D555685" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3725 2775 50  0001 C CNN
+AR Path="/5D555572/5D555685" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 3725 2775 50  0001 C CNN
 F 1 "GND" H 3730 2852 50  0000 C CNN
 F 2 "" H 3725 3025 50  0001 C CNN
 F 3 "" H 3725 3025 50  0001 C CNN
@@ -66,10 +66,10 @@ L Device:Q_NMOS_GSD Q?
 U 1 1 5D55568F
 P 3225 2650
 AR Path="/5D55568F" Ref="Q?"  Part="1" 
-AR Path="/5D555572/5D55568F" Ref="Q?"  Part="1" 
-F 0 "Q?" H 3875 2700 50  0000 L CNN
-F 1 "RTF016N05TL‎" H 3475 2600 50  0000 L CNN
-F 2 "" H 3425 2750 50  0001 C CNN
+AR Path="/5D555572/5D55568F" Ref="Q4"  Part="1" 
+F 0 "Q4" H 3875 2700 50  0000 L CNN
+F 1 "‎BSS816NWH6327XTSA1‎" H 3475 2600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3425 2750 50  0001 C CNN
 F 3 "~" H 3225 2650 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/RTF016N05TL/RTF016N05TLCT-ND/5042583/?itemSeq=293786433" H 3225 2650 50  0001 C CNN "Distributor_link"
 	1    3225 2650

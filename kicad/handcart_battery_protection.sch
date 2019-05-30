@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 8
 Title "handcart_battery_protection"
 Date "2019-05-10"
 Rev "1.0"
@@ -116,8 +116,8 @@ L Device:Q_NMOS_GSD Q2
 U 1 1 5CD73786
 P 5150 2075
 F 0 "Q2" H 5800 2125 50  0000 L CNN
-F 1 "SSM3K329R" H 5400 2025 50  0000 L CNN
-F 2 "" H 5350 2175 50  0001 C CNN
+F 1 "‎BSS816NWH6327XTSA1‎" H 5400 2025 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5350 2175 50  0001 C CNN
 F 3 "~" H 5150 2075 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/SSM3K329R%2cLF/SSM3K329RLFCT-ND/3522426/?itemSeq=293826200" H 0   0   50  0001 C CNN "Distributor_link"
 	1    5150 2075
@@ -135,7 +135,7 @@ U 1 1 5CD8903D
 P 1325 2825
 F 0 "R1" H 1395 2871 50  0000 L CNN
 F 1 "100u" H 1400 2775 50  0000 L CNN
-F 2 "" V 1255 2825 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1255 2825 50  0001 C CNN
 F 3 "~" H 1325 2825 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/vishay-dale/WSLP5931L1000FEA/541-10366-1-ND/10056216" H 1325 2825 50  0001 C CNN "Distributor_link"
 	1    1325 2825
@@ -152,7 +152,7 @@ U 1 1 5CD8B485
 P 2025 3025
 F 0 "R3" V 1818 3025 50  0000 C CNN
 F 1 "1m" V 1909 3025 50  0000 C CNN
-F 2 "" V 1955 3025 50  0001 C CNN
+F 2 "footprints:R_Shunt_WSLP59311" V 1955 3025 50  0001 C CNN
 F 3 "~" H 2025 3025 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/vishay-dale/WSLP59311L000FEB/WSLPD-.001CT-ND/2695495" H 2025 3025 50  0001 C CNN "Distributor_link"
 	1    2025 3025
@@ -163,23 +163,23 @@ Wire Wire Line
 $Comp
 L power:GND #PWR05
 U 1 1 5CD8EE02
-P 8600 4075
-F 0 "#PWR05" H 8600 3825 50  0001 C CNN
-F 1 "GND" H 8605 3902 50  0000 C CNN
-F 2 "" H 8600 4075 50  0001 C CNN
-F 3 "" H 8600 4075 50  0001 C CNN
-	1    8600 4075
+P 9225 3950
+F 0 "#PWR05" H 9225 3700 50  0001 C CNN
+F 1 "GND" H 9230 3777 50  0000 C CNN
+F 2 "" H 9225 3950 50  0001 C CNN
+F 3 "" H 9225 3950 50  0001 C CNN
+	1    9225 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 4075 8600 4000
+	9225 3950 9225 3875
 Wire Wire Line
-	9200 2500 9825 2500
-Text Label 9825 2500 2    50   ~ 0
+	9825 2375 10450 2375
+Text Label 10450 2375 2    50   ~ 0
 12V_sense
 Wire Wire Line
-	9200 2200 9825 2200
-Text Label 9825 2200 2    50   ~ 0
+	9825 2075 10450 2075
+Text Label 10450 2075 2    50   ~ 0
 24V_sense
 Text Notes 700  2900 0    31   ~ 0
 peak current of\n-5A ... +100A possible\n= -0.5mV ... 10mV
@@ -208,34 +208,34 @@ Wire Wire Line
 	2200 3250 2200 3025
 Connection ~ 2200 3025
 Wire Wire Line
-	9200 2300 9825 2300
+	9825 2175 10450 2175
 Wire Wire Line
-	9200 2400 9825 2400
-Text Label 9825 2400 2    50   ~ 0
+	9825 2275 10450 2275
+Text Label 10450 2275 2    50   ~ 0
 100A_sense
-Text Label 9825 2300 2    50   ~ 0
+Text Label 10450 2175 2    50   ~ 0
 5A_sense
-Text Label 9825 3400 2    50   ~ 0
+Text Label 10450 3275 2    50   ~ 0
 12V_relay_ctrl
 Wire Wire Line
-	9200 3400 9825 3400
-Text Label 9825 3500 2    50   ~ 0
+	9825 3275 10450 3275
+Text Label 10450 3375 2    50   ~ 0
 24V_relay_ctrl
 Wire Wire Line
-	9825 3500 9200 3500
+	10450 3375 9825 3375
 Wire Wire Line
-	9200 3200 9825 3200
-Text Label 9825 3100 2    50   ~ 0
+	9825 3075 10450 3075
+Text Label 10450 2975 2    50   ~ 0
 buzzer_pwm
-Text Notes 8150 1400 0    118  ~ 0
+Text Notes 8775 1275 0    118  ~ 0
 µC
 $Comp
 L Device:Q_NMOS_GSD Q3
 U 1 1 5CDFFFBC
 P 3225 4575
 F 0 "Q3" H 3875 4625 50  0000 L CNN
-F 1 "SSM3K329R" H 3475 4525 50  0000 L CNN
-F 2 "" H 3425 4675 50  0001 C CNN
+F 1 "‎BSS816NWH6327XTSA1‎" H 3475 4525 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3425 4675 50  0001 C CNN
 F 3 "~" H 3225 4575 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/SSM3K329R%2cLF/SSM3K329RLFCT-ND/3522426/?itemSeq=293826200" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3225 4575
@@ -246,28 +246,28 @@ LED
 $Comp
 L Device:C C8
 U 1 1 5CDE2966
-P 9400 1675
-F 0 "C8" H 9515 1721 50  0000 L CNN
-F 1 "100n" H 9515 1630 50  0000 L CNN
-F 2 "" H 9438 1525 50  0001 C CNN
-F 3 "~" H 9400 1675 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 0   0   50  0001 C CNN "Distributor_link"
-	1    9400 1675
+P 10025 1550
+F 0 "C8" H 10140 1596 50  0000 L CNN
+F 1 "100n" H 10140 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10063 1400 50  0001 C CNN
+F 3 "~" H 10025 1550 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 625 -125 50  0001 C CNN "Distributor_link"
+	1    10025 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 5CDEF45A
-P 9400 1875
-F 0 "#PWR026" H 9400 1625 50  0001 C CNN
-F 1 "GND" H 9405 1702 50  0000 C CNN
-F 2 "" H 9400 1875 50  0001 C CNN
-F 3 "" H 9400 1875 50  0001 C CNN
-	1    9400 1875
+P 10025 1750
+F 0 "#PWR026" H 10025 1500 50  0001 C CNN
+F 1 "GND" H 10030 1577 50  0000 C CNN
+F 2 "" H 10025 1750 50  0001 C CNN
+F 3 "" H 10025 1750 50  0001 C CNN
+	1    10025 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 1875 9400 1825
+	10025 1750 10025 1700
 Wire Wire Line
 	5050 975  5050 1100
 Wire Wire Line
@@ -282,24 +282,24 @@ Wire Wire Line
 Text Label 1325 2225 0    50   ~ 0
 24V_Bat
 $Comp
-L Device:Q_PMOS_GDS Q?
+L Device:Q_PMOS_GDS Q1
 U 1 1 5D0AD3B3
 P 3275 3125
-F 0 "Q?" V 3618 3125 50  0000 C CNN
+F 0 "Q1" V 3618 3125 50  0000 C CNN
 F 1 "CMPDM302PH TR" V 3527 3125 50  0000 C CNN
-F 2 "" H 3475 3225 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3475 3225 50  0001 C CNN
 F 3 "~" H 3275 3125 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/central-semiconductor-corp/CMPDM302PH-TR/CMPDM302PHCT-ND/4807055" H 3275 3125 50  0001 C CNN "Distributor_link"
 	1    3275 3125
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5D0B33F8
 P 3025 3275
-F 0 "R?" H 3095 3321 50  0000 L CNN
+F 0 "R4" H 3095 3321 50  0000 L CNN
 F 1 "47k" H 3095 3230 50  0000 L CNN
-F 2 "" V 2955 3275 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2955 3275 50  0001 C CNN
 F 3 "~" H 3025 3275 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/te-connectivity-passive-product/CRGCQ0603J47K/A130101CT-ND/8577933" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3025 3275
@@ -313,35 +313,35 @@ Connection ~ 3025 3025
 Wire Wire Line
 	3025 3025 3075 3025
 $Comp
-L Switch:SW_Push_LED SW?
+L Switch:SW_Push_LED SW1
 U 1 1 5D0C52D6
 P 3375 3875
-F 0 "SW?" H 3375 4260 50  0000 C CNN
+F 0 "SW1" H 3375 4260 50  0000 C CNN
 F 1 "SW_Push_LED" H 3375 4169 50  0000 C CNN
-F 2 "" H 3375 4175 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3375 4175 50  0001 C CNN
 F 3 "" H 3375 4175 50  0001 C CNN
 	1    3375 3875
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C1
 U 1 1 5D0CC13F
 P 3825 3975
-F 0 "C?" H 3943 4021 50  0000 L CNN
+F 0 "C1" H 3943 4021 50  0000 L CNN
 F 1 "100u" H 3943 3930 50  0000 L CNN
-F 2 "" H 3863 3825 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3863 3825 50  0001 C CNN
 F 3 "~" H 3825 3975 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/panasonic-electronic-components/ECE-V1JA101P/PCE3203CT-ND/273925" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3825 3975
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 5D0CC250
 P 3825 3325
-F 0 "R?" H 3895 3371 50  0000 L CNN
+F 0 "R6" H 3895 3371 50  0000 L CNN
 F 1 "100k" H 3895 3280 50  0000 L CNN
-F 2 "" V 3755 3325 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3755 3325 50  0001 C CNN
 F 3 "~" H 3825 3325 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/bourns-inc/CR0603-JW-104ELF/CR0603-JW-104ELFCT-ND/3767631" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3825 3325
@@ -351,14 +351,14 @@ Wire Wire Line
 	3825 3175 3825 3025
 Connection ~ 3825 3025
 Wire Wire Line
-	3825 3025 4000 3025
+	3825 3025 4275 3025
 Wire Wire Line
 	3825 4125 3825 4200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 5D0F3897
 P 3825 4200
-F 0 "#PWR?" H 3825 3950 50  0001 C CNN
+F 0 "#PWR08" H 3825 3950 50  0001 C CNN
 F 1 "GND" H 3830 4027 50  0000 C CNN
 F 2 "" H 3825 4200 50  0001 C CNN
 F 3 "" H 3825 4200 50  0001 C CNN
@@ -401,17 +401,17 @@ Wire Wire Line
 	3175 3875 3125 3875
 Wire Wire Line
 	3125 3875 3125 4375
-Text Label 9825 2800 2    50   ~ 0
+Text Label 10450 2675 2    50   ~ 0
 ~uC_EN
 Wire Wire Line
-	9825 2800 9200 2800
+	10450 2675 9825 2675
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 5D1973F3
 P 2750 3475
-F 0 "R?" V 2543 3475 50  0000 C CNN
+F 0 "R2" V 2543 3475 50  0000 C CNN
 F 1 "10k" V 2634 3475 50  0000 C CNN
-F 2 "" V 2680 3475 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2680 3475 50  0001 C CNN
 F 3 "~" H 2750 3475 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/susumu/RR0816P-103-D/RR08P10.0KDCT-ND/432748" H 0   0   50  0001 C CNN "Distributor_link"
 	1    2750 3475
@@ -422,10 +422,10 @@ Wire Wire Line
 Wire Wire Line
 	2300 3475 2600 3475
 $Comp
-L Reference_Voltage:REF3025 U?
+L Reference_Voltage:REF3025 U2
 U 1 1 5D1A8732
 P 5900 7000
-F 0 "U?" H 5670 7046 50  0000 R CNN
+F 0 "U2" H 5670 7046 50  0000 R CNN
 F 1 "REF3025" H 5670 6955 50  0000 R CIN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5900 6550 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 6000 6650 50  0001 C CIN
@@ -438,10 +438,10 @@ Wire Wire Line
 Wire Wire Line
 	5450 1850 6125 1850
 $Comp
-L Device:D D?
+L Device:D D5
 U 1 1 5D1CA983
 P 4450 1375
-F 0 "D?" V 4404 1454 50  0000 L CNN
+F 0 "D5" V 4404 1454 50  0000 L CNN
 F 1 "BAT54-7-F" V 4495 1454 50  0000 L CNN
 F 2 "" H 4450 1375 50  0001 C CNN
 F 3 "~" H 4450 1375 50  0001 C CNN
@@ -465,24 +465,24 @@ Wire Wire Line
 Wire Wire Line
 	5050 975  5450 975 
 $Comp
-L Device:R R?
+L Device:R R8
 U 1 1 5D232642
 P 5300 2375
-F 0 "R?" H 5370 2421 50  0000 L CNN
+F 0 "R8" H 5370 2421 50  0000 L CNN
 F 1 "100k" H 5370 2330 50  0000 L CNN
-F 2 "" V 5230 2375 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 2375 50  0001 C CNN
 F 3 "~" H 5300 2375 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/bourns-inc/CR0603-JW-104ELF/CR0603-JW-104ELFCT-ND/3767631" H 0   0   50  0001 C CNN "Distributor_link"
 	1    5300 2375
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R9
 U 1 1 5D232821
 P 5800 2075
-F 0 "R?" H 5870 2121 50  0000 L CNN
+F 0 "R9" H 5870 2121 50  0000 L CNN
 F 1 "100" H 5870 2030 50  0000 L CNN
-F 2 "" V 5730 2075 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 2075 50  0001 C CNN
 F 3 "~" H 5800 2075 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/rohm-semiconductor/ESR03EZPJ101/RHM100DCT-ND/1983776" H 0   0   50  0001 C CNN "Distributor_link"
 	1    5800 2075
@@ -503,24 +503,24 @@ Connection ~ 5050 2375
 Wire Wire Line
 	5050 2375 5050 2475
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5D2562CE
 P 3375 4875
-F 0 "R?" H 3445 4921 50  0000 L CNN
+F 0 "R5" H 3445 4921 50  0000 L CNN
 F 1 "100k" H 3445 4830 50  0000 L CNN
-F 2 "" V 3305 4875 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3305 4875 50  0001 C CNN
 F 3 "~" H 3375 4875 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/bourns-inc/CR0603-JW-104ELF/CR0603-JW-104ELFCT-ND/3767631" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3375 4875
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5D256599
 P 3825 4575
-F 0 "R?" H 3895 4621 50  0000 L CNN
+F 0 "R7" H 3895 4621 50  0000 L CNN
 F 1 "100" H 3895 4530 50  0000 L CNN
-F 2 "" V 3755 4575 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3755 4575 50  0001 C CNN
 F 3 "~" H 3825 4575 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/rohm-semiconductor/ESR03EZPJ101/RHM100DCT-ND/1983776" H 0   0   50  0001 C CNN "Distributor_link"
 	1    3825 4575
@@ -552,10 +552,10 @@ Wire Wire Line
 Text Label 925  700  0    50   ~ 0
 12V_rail
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 5D3F31BC
 P 5800 7375
-F 0 "#PWR?" H 5800 7125 50  0001 C CNN
+F 0 "#PWR012" H 5800 7125 50  0001 C CNN
 F 1 "GND" H 5805 7202 50  0000 C CNN
 F 2 "" H 5800 7375 50  0001 C CNN
 F 3 "" H 5800 7375 50  0001 C CNN
@@ -567,33 +567,22 @@ Wire Wire Line
 Wire Wire Line
 	5800 6700 5800 6650
 $Comp
-L power:+5V #PWR?
-U 1 1 5D406F6A
-P 5800 6600
-F 0 "#PWR?" H 5800 6450 50  0001 C CNN
-F 1 "+5V" H 5815 6773 50  0000 C CNN
-F 2 "" H 5800 6600 50  0001 C CNN
-F 3 "" H 5800 6600 50  0001 C CNN
-	1    5800 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
+L Device:C C2
 U 1 1 5D4072F1
 P 5200 7175
-F 0 "C?" H 5086 7129 50  0000 R CNN
+F 0 "C2" H 5086 7129 50  0000 R CNN
 F 1 "1u" H 5086 7220 50  0000 R CNN
-F 2 "" H 5238 7025 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5238 7025 50  0001 C CNN
 F 3 "~" H 5200 7175 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10A105KP8NNNC/1276-1182-1-ND/3889268" H 325 900 50  0001 C CNN "Distributor_link"
 	1    5200 7175
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR010
 U 1 1 5D4074C9
 P 5200 7400
-F 0 "#PWR?" H 5200 7150 50  0001 C CNN
+F 0 "#PWR010" H 5200 7150 50  0001 C CNN
 F 1 "GND" H 5205 7227 50  0000 C CNN
 F 2 "" H 5200 7400 50  0001 C CNN
 F 3 "" H 5200 7400 50  0001 C CNN
@@ -610,10 +599,10 @@ Connection ~ 5800 6650
 Wire Wire Line
 	5800 6650 5800 6600
 $Comp
-L power:+2V5 #PWR?
+L power:+2V5 #PWR013
 U 1 1 5D50B856
 P 6425 6950
-F 0 "#PWR?" H 6425 6800 50  0001 C CNN
+F 0 "#PWR013" H 6425 6800 50  0001 C CNN
 F 1 "+2V5" H 6440 7123 50  0000 C CNN
 F 2 "" H 6425 6950 50  0001 C CNN
 F 3 "" H 6425 6950 50  0001 C CNN
@@ -624,29 +613,21 @@ Wire Wire Line
 	6425 6950 6425 7000
 Wire Wire Line
 	6200 7000 6425 7000
-Text Notes 9975 2600 0    50   ~ 0
+Text Notes 10600 2475 0    50   ~ 0
 ADC_Vref_in
 $Comp
-L power:+2V5 #PWR?
+L power:+2V5 #PWR016
 U 1 1 5D518757
-P 9950 2600
-F 0 "#PWR?" H 9950 2450 50  0001 C CNN
-F 1 "+2V5" H 9965 2773 50  0000 C CNN
-F 2 "" H 9950 2600 50  0001 C CNN
-F 3 "" H 9950 2600 50  0001 C CNN
-	1    9950 2600
+P 10575 2475
+F 0 "#PWR016" H 10575 2325 50  0001 C CNN
+F 1 "+2V5" H 10590 2648 50  0000 C CNN
+F 2 "" H 10575 2475 50  0001 C CNN
+F 3 "" H 10575 2475 50  0001 C CNN
+	1    10575 2475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 2600 9950 2600
-Text Label 3075 6900 2    50   ~ 0
-12V_sense
-Wire Wire Line
-	3075 6900 2625 6900
-Wire Wire Line
-	2625 6625 3075 6625
-Text Label 3075 6625 2    50   ~ 0
-24V_sense
+	9825 2475 10575 2475
 Text Label 775  6525 0    50   ~ 0
 24V_Bat
 Wire Wire Line
@@ -709,17 +690,17 @@ Text Label 850  5900 0    50   ~ 0
 Wire Wire Line
 	1475 5900 850  5900
 $Sheet
-S 4000 2950 825  225 
+S 4275 2950 825  225 
 U 5D5AF20E
-F0 "uC_5V_SMPS" 50
-F1 "uC_5V_SMPS.sch" 50
-F2 "uC_VDD" I L 4000 3025 50 
+F0 "3V3_SMPS" 50
+F1 "3V3_SMPS.sch" 50
+F2 "uC_VDD" I L 4275 3025 50 
 $EndSheet
 $Comp
-L Device:D D?
+L Device:D D4
 U 1 1 5D5DD462
 P 2175 1825
-F 0 "D?" H 2175 2050 50  0000 C CNN
+F 0 "D4" H 2175 2050 50  0000 C CNN
 F 1 "BAT54-7-F" H 2150 1950 50  0000 C CNN
 F 2 "" H 2175 1825 50  0001 C CNN
 F 3 "~" H 2175 1825 50  0001 C CNN
@@ -732,12 +713,12 @@ Wire Wire Line
 Text Label 4575 975  0    50   ~ 0
 12V_rail
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 5D5F6043
 P 6425 7250
-F 0 "C?" H 6310 7204 50  0000 R CNN
+F 0 "C3" H 6310 7204 50  0000 R CNN
 F 1 "100n" H 6310 7295 50  0000 R CNN
-F 2 "" H 6463 7100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6463 7100 50  0001 C CNN
 F 3 "~" H 6425 7250 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 325 900 50  0001 C CNN "Distributor_link"
 	1    6425 7250
@@ -749,10 +730,10 @@ Connection ~ 6425 7000
 Wire Wire Line
 	6425 7400 6425 7425
 $Comp
-L power:GND #PWR?
+L power:GND #PWR014
 U 1 1 5D5FDF70
 P 6425 7425
-F 0 "#PWR?" H 6425 7175 50  0001 C CNN
+F 0 "#PWR014" H 6425 7175 50  0001 C CNN
 F 1 "GND" H 6430 7252 50  0000 C CNN
 F 2 "" H 6425 7425 50  0001 C CNN
 F 3 "" H 6425 7425 50  0001 C CNN
@@ -760,49 +741,38 @@ F 3 "" H 6425 7425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny1617-M U?
+L MCU_Microchip_ATtiny:ATtiny1617-M U3
 U 1 1 5D617FC1
-P 8600 2900
-F 0 "U?" H 7975 4050 50  0000 C CNN
-F 1 "ATtiny1617-M" H 8200 3950 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 8600 2900 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3217_1617-Data-Sheet-40001999B.pdf" H 8600 2900 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/de/microchip-technology/ATTINY1617-MNR/ATTINY1617-MNRCT-ND/7354434" H 8600 2900 50  0001 C CNN "Distributor_link"
-	1    8600 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D623F24
-P 9400 1450
-F 0 "#PWR?" H 9400 1300 50  0001 C CNN
-F 1 "+5V" H 9415 1623 50  0000 C CNN
-F 2 "" H 9400 1450 50  0001 C CNN
-F 3 "" H 9400 1450 50  0001 C CNN
-	1    9400 1450
+P 9225 2775
+F 0 "U3" H 8600 3925 50  0000 C CNN
+F 1 "ATtiny1617-M" H 8825 3825 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 9225 2775 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3217_1617-Data-Sheet-40001999B.pdf" H 9225 2775 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/microchip-technology/ATTINY1617-MNR/ATTINY1617-MNRCT-ND/7354434" H 9225 2775 50  0001 C CNN "Distributor_link"
+	1    9225 2775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 1450 9400 1475
+	10025 1300 10025 1350
 Wire Wire Line
-	9400 1475 8600 1475
-Connection ~ 9400 1475
+	10025 1350 9225 1350
+Connection ~ 10025 1350
 Wire Wire Line
-	9400 1475 9400 1525
+	10025 1350 10025 1400
 Wire Wire Line
-	8600 1475 8600 1800
+	9225 1350 9225 1675
 Wire Wire Line
-	9200 3000 9825 3000
-Text Label 9825 3000 2    50   ~ 0
+	9825 2875 10450 2875
+Text Label 10450 2875 2    50   ~ 0
 LED
-Text Label 9825 3200 2    50   ~ 0
+Text Label 10450 3075 2    50   ~ 0
 UART_Tx
 Wire Wire Line
-	9200 3300 9825 3300
-Text Label 9825 3300 2    50   ~ 0
+	9825 3175 10450 3175
+Text Label 10450 3175 2    50   ~ 0
 UART_Rx
 Wire Wire Line
-	9825 3100 9200 3100
+	10450 2975 9825 2975
 Text Label 775  6900 0    50   ~ 0
 12V_switchable
 Wire Wire Line
@@ -812,22 +782,22 @@ Text Label 775  6800 0    50   ~ 0
 Wire Wire Line
 	775  6800 1400 6800
 $Comp
-L project_symbols:TC4428 U?
+L project_symbols:TC4428 U1
 U 1 1 5CEC2B39
 P 1550 700
-F 0 "U?" H 1375 800 50  0000 L CNN
+F 0 "U1" H 1375 800 50  0000 L CNN
 F 1 "TC4428" H 1675 800 50  0000 L CNN
-F 2 "" H 1550 700 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1550 700 50  0001 C CNN
 F 3 "" H 1550 700 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/TC4428ACOA/TC4428ACOA-ND/442842/?itemSeq=293786498" H 1550 700 50  0001 C CNN "Distributor_link"
 	1    1550 700 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR06
 U 1 1 5CED0D62
 P 1150 800
-F 0 "#PWR?" H 1150 550 50  0001 C CNN
+F 0 "#PWR06" H 1150 550 50  0001 C CNN
 F 1 "GND" H 1155 627 50  0000 C CNN
 F 2 "" H 1150 800 50  0001 C CNN
 F 3 "" H 1150 800 50  0001 C CNN
@@ -849,10 +819,10 @@ Wire Wire Line
 Wire Wire Line
 	2050 1625 1925 1625
 $Comp
-L power:GND #PWR?
+L power:GND #PWR07
 U 1 1 5CEF49E8
 P 2175 2000
-F 0 "#PWR?" H 2175 1750 50  0001 C CNN
+F 0 "#PWR07" H 2175 1750 50  0001 C CNN
 F 1 "GND" H 2180 1827 50  0000 C CNN
 F 2 "" H 2175 2000 50  0001 C CNN
 F 3 "" H 2175 2000 50  0001 C CNN
@@ -862,10 +832,10 @@ $EndComp
 Wire Wire Line
 	2175 1975 2175 2000
 $Comp
-L Device:D D?
+L Device:D D3
 U 1 1 5CEF8747
 P 2175 1450
-F 0 "D?" H 2175 1675 50  0000 C CNN
+F 0 "D3" H 2175 1675 50  0000 C CNN
 F 1 "BAT54-7-F" H 2150 1575 50  0000 C CNN
 F 2 "" H 2175 1450 50  0001 C CNN
 F 3 "~" H 2175 1450 50  0001 C CNN
@@ -886,10 +856,10 @@ Text Label 2500 1300 2    50   ~ 0
 Wire Wire Line
 	2175 1300 2500 1300
 $Comp
-L Device:D D?
+L Device:D D2
 U 1 1 5CF04854
 P 1125 1825
-F 0 "D?" H 1125 2050 50  0000 C CNN
+F 0 "D2" H 1125 2050 50  0000 C CNN
 F 1 "BAT54-7-F" H 1100 1950 50  0000 C CNN
 F 2 "" H 1125 1825 50  0001 C CNN
 F 3 "~" H 1125 1825 50  0001 C CNN
@@ -898,10 +868,10 @@ F 4 "https://www.digikey.de/product-detail/de/BAT54-7-F/BAT54-FDICT-ND/717819/?i
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR03
 U 1 1 5CF0485B
 P 1125 2000
-F 0 "#PWR?" H 1125 1750 50  0001 C CNN
+F 0 "#PWR03" H 1125 1750 50  0001 C CNN
 F 1 "GND" H 1130 1827 50  0000 C CNN
 F 2 "" H 1125 2000 50  0001 C CNN
 F 3 "" H 1125 2000 50  0001 C CNN
@@ -911,10 +881,10 @@ $EndComp
 Wire Wire Line
 	1125 1975 1125 2000
 $Comp
-L Device:D D?
+L Device:D D1
 U 1 1 5CF04862
 P 1125 1450
-F 0 "D?" H 1125 1675 50  0000 C CNN
+F 0 "D1" H 1125 1675 50  0000 C CNN
 F 1 "BAT54-7-F" H 1100 1575 50  0000 C CNN
 F 2 "" H 1125 1450 50  0001 C CNN
 F 3 "~" H 1125 1450 50  0001 C CNN
@@ -935,10 +905,10 @@ Wire Wire Line
 	1125 1300 800  1300
 Connection ~ 1250 1625
 $Comp
-L project_symbols:relay K?
+L project_symbols:relay K2
 U 1 1 5CF2C7A3
 P 5250 1400
-F 0 "K?" H 5580 1446 50  0000 L CNN
+F 0 "K2" H 5580 1446 50  0000 L CNN
 F 1 "ALQ3F12" H 5580 1355 50  0000 L CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 5600 1350 50  0001 L CNN
 F 3 "" H 5250 1400 50  0001 C CNN
@@ -957,26 +927,15 @@ F4 "BAT24V" B R 6700 4300 50
 F5 "BAT12V" B R 6700 4400 50 
 F6 "Visense" I L 5375 4850 50 
 F7 "Vset" I L 5375 4750 50 
-F8 "5V" I L 5375 4400 50 
+F8 "3V3" I L 5375 4400 50 
 $EndSheet
 Text Label 2950 2225 2    50   ~ 0
 24V_switchable
-$Comp
-L power:+5V #PWR?
-U 1 1 5CEDDDE9
-P 4850 4400
-F 0 "#PWR?" H 4850 4250 50  0001 C CNN
-F 1 "+5V" H 4865 4573 50  0000 C CNN
-F 2 "" H 4850 4400 50  0001 C CNN
-F 3 "" H 4850 4400 50  0001 C CNN
-	1    4850 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4850 4400 5375 4400
 Wire Wire Line
-	9200 2700 10000 2700
-Text Label 10000 2700 2    50   ~ 0
+	9825 2575 10625 2575
+Text Label 10625 2575 2    50   ~ 0
 DAC_Balancer_Vset
 Text Label 4600 4750 0    50   ~ 0
 DAC_Balancer_Vset
@@ -986,10 +945,10 @@ Wire Wire Line
 	5375 4550 4625 4550
 Text Label 4625 4550 0    50   ~ 0
 ~BAL_Shutdown
-Text Label 9825 3600 2    50   ~ 0
+Text Label 10450 3475 2    50   ~ 0
 ~BAL_Shutdown
 Wire Wire Line
-	9825 3600 9200 3600
+	10450 3475 9825 3475
 Text Label 2650 3025 0    50   ~ 0
 12V_rail
 Text Label 5775 4075 2    50   ~ 0
@@ -998,118 +957,193 @@ Wire Wire Line
 	5200 4075 5200 4300
 Wire Wire Line
 	5200 4300 5375 4300
-Wire Wire Line
-	5650 4075 5200 4075
-Text Label 8150 4400 2    50   ~ 0
+Text Label 7350 4400 2    50   ~ 0
 12V_switchable
 Wire Wire Line
-	6700 4300 7325 4300
-Text Label 7325 4300 2    50   ~ 0
+	6700 4300 7350 4300
+Text Label 7350 4300 2    50   ~ 0
 24V_switchable
 Text Notes 5575 6325 0    79   ~ 0
 Vref
-$Comp
-L Device:R R?
-U 1 1 5CF572DB
-P 7100 4400
-F 0 "R?" V 6893 4400 50  0000 C CNN
-F 1 "1m" V 6984 4400 50  0000 C CNN
-F 2 "" V 7030 4400 50  0001 C CNN
-F 3 "~" H 7100 4400 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/de/vishay-dale/WSLP59311L000FEB/WSLPD-.001CT-ND/2695495" H 7100 4400 50  0001 C CNN "Distributor_link"
-	1    7100 4400
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
-	6950 4400 6850 4400
+	5375 4850 4600 4850
 Wire Wire Line
-	7250 4400 7350 4400
+	5200 4075 5775 4075
+Text Label 3575 5850 2    50   ~ 0
+5A_sense_unfiltered
+Text Label 5075 5700 2    50   ~ 0
+100A_sense
+Wire Wire Line
+	5075 5700 4450 5700
 $Comp
-L project_symbols:INA4181 U?
-U 3 1 5CF7FD4F
-P 6000 5600
-F 0 "U?" H 5900 5974 50  0000 C CNN
-F 1 "INA4181" H 5900 6065 50  0000 C CNN
-F 2 "" H 6000 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 6000 5600 50  0001 C CNN
-	3    6000 5600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+2V5 #PWR?
-U 1 1 5CF99CB5
-P 8100 5200
-F 0 "#PWR?" H 8100 5050 50  0001 C CNN
-F 1 "+2V5" H 8115 5373 50  0000 C CNN
-F 2 "" H 8100 5200 50  0001 C CNN
-F 3 "" H 8100 5200 50  0001 C CNN
-	1    8100 5200
+L power:+3.3V #PWR011
+U 1 1 5CF1D41B
+P 5800 6600
+F 0 "#PWR011" H 5800 6450 50  0001 C CNN
+F 1 "+3.3V" H 5815 6773 50  0000 C CNN
+F 2 "" H 5800 6600 50  0001 C CNN
+F 3 "" H 5800 6600 50  0001 C CNN
+	1    5800 6600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5CF99D48
-P 8100 5400
-F 0 "R?" H 8170 5446 50  0000 L CNN
-F 1 "10k" H 8170 5355 50  0000 L CNN
-F 2 "" V 8030 5400 50  0001 C CNN
-F 3 "~" H 8100 5400 50  0001 C CNN
-	1    8100 5400
+L power:+3.3V #PWR015
+U 1 1 5CF1D517
+P 10025 1300
+F 0 "#PWR015" H 10025 1150 50  0001 C CNN
+F 1 "+3.3V" H 10040 1473 50  0000 C CNN
+F 2 "" H 10025 1300 50  0001 C CNN
+F 3 "" H 10025 1300 50  0001 C CNN
+	1    10025 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5CF99E1E
-P 8100 5750
-F 0 "R?" H 8170 5796 50  0000 L CNN
-F 1 "10k" H 8170 5705 50  0000 L CNN
-F 2 "" V 8030 5750 50  0001 C CNN
-F 3 "~" H 8100 5750 50  0001 C CNN
-	1    8100 5750
+L power:+3.3V #PWR09
+U 1 1 5CEF6FEA
+P 4850 4400
+F 0 "#PWR09" H 4850 4250 50  0001 C CNN
+F 1 "+3.3V" H 4865 4573 50  0000 C CNN
+F 2 "" H 4850 4400 50  0001 C CNN
+F 3 "" H 4850 4400 50  0001 C CNN
+	1    4850 4400
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 3775 5625 675  250 
+U 5CF4C89D
+F0 "AA_LPF1" 50
+F1 "AA_LPF.sch" 50
+F2 "in1" I L 3775 5700 50 
+F3 "out1" O R 4450 5700 50 
+F4 "in2" I L 3775 5800 50 
+F5 "out2" O R 4450 5800 50 
+$EndSheet
+$Sheet
+S 2975 6625 675  250 
+U 5CF56EA4
+F0 "AA_LPF2" 50
+F1 "AA_LPF.sch" 50
+F2 "in1" I L 2975 6700 50 
+F3 "out1" O R 3650 6700 50 
+F4 "in2" I L 2975 6800 50 
+F5 "out2" O R 3650 6800 50 
+$EndSheet
 Wire Wire Line
-	8100 5550 8100 5600
+	3700 5850 3700 5800
 Wire Wire Line
-	8100 5200 8100 5250
+	3700 5800 3775 5800
 Wire Wire Line
-	8100 5900 8100 6000
+	2725 5850 3700 5850
+Wire Wire Line
+	2725 5600 3700 5600
+Wire Wire Line
+	3700 5600 3700 5700
+Wire Wire Line
+	3700 5700 3775 5700
+Wire Wire Line
+	4450 5800 5075 5800
+Text Label 5075 5800 2    50   ~ 0
+5A_sense
+Wire Wire Line
+	2900 6625 2900 6700
+Wire Wire Line
+	2900 6700 2975 6700
+Wire Wire Line
+	2625 6625 2900 6625
+Wire Wire Line
+	2975 6800 2900 6800
+Wire Wire Line
+	2900 6800 2900 6900
+Wire Wire Line
+	2900 6900 2625 6900
+Text Label 4150 6700 2    50   ~ 0
+24V_sense
+Wire Wire Line
+	4150 6700 3650 6700
+Wire Wire Line
+	3650 6800 4150 6800
+Text Label 4150 6800 2    50   ~ 0
+12V_sense
 $Comp
-L power:GND #PWR?
-U 1 1 5CFA9428
-P 8100 6000
-F 0 "#PWR?" H 8100 5750 50  0001 C CNN
-F 1 "GND" H 8105 5827 50  0000 C CNN
-F 2 "" H 8100 6000 50  0001 C CNN
-F 3 "" H 8100 6000 50  0001 C CNN
-	1    8100 6000
+L Interface_UART:MAX485E U12
+U 1 1 5CF933FD
+P 9875 5250
+F 0 "U12" H 9875 5928 50  0000 C CNN
+F 1 "ST3485" H 9875 5837 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9875 4550 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 9875 5300 50  0001 C CNN
+	1    9875 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5CF93B54
+P 10925 5250
+F 0 "J1" H 10898 5223 50  0000 R CNN
+F 1 "Bus" H 10898 5132 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10925 5250 50  0001 C CNN
+F 3 "~" H 10925 5250 50  0001 C CNN
+	1    10925 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10725 5250 10725 5150
+Wire Wire Line
+	10725 5150 10275 5150
+Wire Wire Line
+	10275 5450 10725 5450
+Wire Wire Line
+	10725 5450 10725 5350
+Text Label 10375 5450 0    50   ~ 0
+BUS_A
+Text Label 10375 5150 0    50   ~ 0
+BUS_B
+$Comp
+L power:GND #PWR053
+U 1 1 5CFA0DE2
+P 9875 5900
+F 0 "#PWR053" H 9875 5650 50  0001 C CNN
+F 1 "GND" H 9880 5727 50  0000 C CNN
+F 2 "" H 9875 5900 50  0001 C CNN
+F 3 "" H 9875 5900 50  0001 C CNN
+	1    9875 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7825 5250 7825 5600
+	9875 5900 9875 5850
+$Comp
+L power:GND #PWR052
+U 1 1 5CFA7930
+P 9300 5550
+F 0 "#PWR052" H 9300 5300 50  0001 C CNN
+F 1 "GND" H 9305 5377 50  0000 C CNN
+F 2 "" H 9300 5550 50  0001 C CNN
+F 3 "" H 9300 5550 50  0001 C CNN
+	1    9300 5550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7825 5600 8100 5600
+	9300 5550 9300 5250
 Wire Wire Line
-	6000 5250 7825 5250
-Connection ~ 8100 5600
+	9300 5250 9475 5250
 Wire Wire Line
-	6500 5500 6850 5500
+	9825 3575 10450 3575
+Text Label 10450 3575 2    50   ~ 0
+TX_EN
+Text Label 8925 5350 0    50   ~ 0
+TX_EN
 Wire Wire Line
-	6850 5500 6850 4400
-Connection ~ 6850 4400
+	8925 5350 9475 5350
 Wire Wire Line
-	6850 4400 6700 4400
+	9475 5150 8925 5150
+Text Label 8925 5150 0    50   ~ 0
+UART_Rx
 Wire Wire Line
-	7350 4400 7350 5700
+	9475 5450 8925 5450
+Text Label 8925 5450 0    50   ~ 0
+UART_Tx
 Wire Wire Line
-	7350 5700 6500 5700
-Connection ~ 7350 4400
-Wire Wire Line
-	7350 4400 8150 4400
-Wire Wire Line
-	5375 4850 5025 4850
-Wire Wire Line
-	5025 4850 5025 5600
-Wire Wire Line
-	5025 5600 5700 5600
+	6700 4400 7350 4400
+Text Label 4600 4850 0    50   ~ 0
+5A_sense_unfiltered
 $EndSCHEMATC
