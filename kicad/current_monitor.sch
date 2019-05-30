@@ -313,7 +313,7 @@ U 1 1 5CEF2F87
 P 2875 2500
 F 0 "U6" H 3216 2521 50  0000 L CNN
 F 1 "INA2181" H 3216 2430 50  0000 L CNN
-F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 2875 2500 50  0001 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2875 2500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 2875 2500 50  0001 C CNN
 	1    2875 2500
 	1    0    0    -1  
@@ -324,7 +324,7 @@ U 2 1 5CEF3034
 P 2875 3850
 F 0 "U6" H 2775 4317 50  0000 C CNN
 F 1 "INA2181" H 2775 4226 50  0000 C CNN
-F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 2875 3850 50  0001 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2875 3850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 2875 3850 50  0001 C CNN
 	2    2875 3850
 	1    0    0    -1  
@@ -340,7 +340,7 @@ U 1 1 5CF40941
 P 3975 2850
 F 0 "U5" H 3975 3217 50  0000 C CNN
 F 1 "TLV9062" H 3975 3126 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3975 2850 50  0001 C CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 3975 2850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv2375.pdf" H 3975 2850 50  0001 C CNN
 	1    3975 2850
 	-1   0    0    -1  
@@ -351,7 +351,7 @@ U 2 1 5CF40B6D
 P 3775 4325
 F 0 "U5" H 3775 4692 50  0000 C CNN
 F 1 "TLV9062" H 3775 4601 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3775 4325 50  0001 C CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 3775 4325 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv2375.pdf" H 3775 4325 50  0001 C CNN
 	2    3775 4325
 	-1   0    0    -1  
@@ -362,7 +362,7 @@ U 3 1 5CF40CE9
 P 2800 1100
 F 0 "U5" H 2758 1146 50  0000 L CNN
 F 1 "TLV9062" H 2758 1055 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 1100 50  0001 C CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 2800 1100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv2375.pdf" H 2800 1100 50  0001 C CNN
 	3    2800 1100
 	1    0    0    -1  

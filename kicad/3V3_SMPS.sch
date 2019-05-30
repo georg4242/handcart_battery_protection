@@ -55,7 +55,7 @@ AR Path="/5D5B5EBD" Ref="C?"  Part="1"
 AR Path="/5D5AF20E/5D5B5EBD" Ref="C9"  Part="1" 
 F 0 "C9" H 1940 2271 50  0000 L CNN
 F 1 "10u/50V" H 1940 2180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1863 2075 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1863 2075 50  0001 C CNN
 F 3 "~" H 1825 2225 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL31A106MBHNNNE/1276-6736-1-ND/5961595" H 0   0   50  0001 C CNN "Distributor_link"
 	1    1825 2225
@@ -141,7 +141,7 @@ AR Path="/5D5B5F00" Ref="C?"  Part="1"
 AR Path="/5D5AF20E/5D5B5F00" Ref="C11"  Part="1" 
 F 0 "C11" H 4940 2896 50  0000 L CNN
 F 1 "22u/25V" H 4940 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4863 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4863 2700 50  0001 C CNN
 F 3 "~" H 4825 2850 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL21A226MOCLRNC/1276-6780-1-ND/5961639" H 225 225 50  0001 C CNN "Distributor_link"
 	1    4825 2850
@@ -191,8 +191,8 @@ L power:GND #PWR?
 U 1 1 5D0D02A9
 P 4100 3075
 AR Path="/5D0D02A9" Ref="#PWR?"  Part="1" 
-AR Path="/5D5AF20E/5D0D02A9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4100 2825 50  0001 C CNN
+AR Path="/5D5AF20E/5D0D02A9" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 4100 2825 50  0001 C CNN
 F 1 "GND" H 4105 2902 50  0000 C CNN
 F 2 "" H 4100 3075 50  0001 C CNN
 F 3 "" H 4100 3075 50  0001 C CNN
@@ -208,8 +208,8 @@ L Device:R R?
 U 1 1 5D0D0875
 P 4100 2375
 AR Path="/5D0D0875" Ref="R?"  Part="1" 
-AR Path="/5D5AF20E/5D0D0875" Ref="R?"  Part="1" 
-F 0 "R?" H 4170 2421 50  0000 L CNN
+AR Path="/5D5AF20E/5D0D0875" Ref="R46"  Part="1" 
+F 0 "R46" H 4170 2421 50  0000 L CNN
 F 1 "23.7k" H 4170 2330 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 2375 50  0001 C CNN
 F 3 "~" H 4100 2375 50  0001 C CNN
