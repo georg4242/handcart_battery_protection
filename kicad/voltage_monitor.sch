@@ -182,8 +182,6 @@ Wire Wire Line
 	4175 4300 4525 4300
 Connection ~ 4175 4300
 Wire Wire Line
-	2500 3850 3050 3850
-Wire Wire Line
 	3025 4200 2925 4200
 Wire Wire Line
 	2950 4400 2975 4400
@@ -317,8 +315,6 @@ Wire Wire Line
 	2650 5650 2775 5650
 Wire Wire Line
 	2750 6000 2350 6000
-Text Notes 2625 3825 0    31   ~ 0
-10...15V
 $Comp
 L power:GND #PWR?
 U 1 1 5D4ED4F7
@@ -409,15 +405,13 @@ Wire Wire Line
 Connection ~ 2975 4400
 Wire Wire Line
 	2975 4400 3000 4400
-Text HLabel 2500 3850 0    50   Input ~ 0
-12V
 Text HLabel 2500 4400 0    50   Input ~ 0
 24V_Bat
-Text HLabel 4525 4300 2    50   Output ~ 0
+Text HLabel 4300 6100 2    50   Output ~ 0
 12V_sense
 Text HLabel 2275 6200 0    50   Input ~ 0
 12V_rail
-Text HLabel 4300 6100 2    50   Output ~ 0
+Text HLabel 4525 4300 2    50   Output ~ 0
 24V_sense
 Wire Wire Line
 	2500 4525 2650 4525
@@ -463,7 +457,7 @@ Wire Wire Line
 Wire Wire Line
 	2375 6325 2275 6325
 Text HLabel 2275 6325 0    50   Input ~ 0
-12V_switchable
+12V_direct
 Wire Wire Line
 	2575 1975 2750 1975
 $Comp
@@ -484,4 +478,8 @@ Wire Wire Line
 	2750 1975 2925 1975
 Text HLabel 2500 4525 0    50   Input ~ 0
 24V_switchable
+Text HLabel 2625 3850 0    50   Input ~ 0
+Bat2_Low
+Wire Wire Line
+	2625 3850 3050 3850
 $EndSCHEMATC

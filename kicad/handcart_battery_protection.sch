@@ -556,8 +556,6 @@ Text Label 775  6675 0    50   ~ 0
 24V_Bat
 Wire Wire Line
 	1400 6675 775  6675
-Wire Wire Line
-	775  6775 1400 6775
 $Sheet
 S 1325 7400 900  200 
 U 5D555572
@@ -574,9 +572,9 @@ F2 "24V_Bat" I L 1400 6675 50
 F3 "12V_sense" O R 2625 6900 50 
 F4 "24V_sense" O R 2625 6625 50 
 F5 "12V_rail" I L 1400 6900 50 
-F6 "12V_switchable" I L 1400 7000 50 
-F7 "12V" I L 1400 6775 50 
-F8 "24V_switchable" I L 1400 6550 50 
+F6 "24V_switchable" I L 1400 6550 50 
+F7 "12V_direct" I L 1400 7000 50 
+F8 "Bat2_Low" I L 1400 6775 50 
 $EndSheet
 Wire Wire Line
 	1325 7475 800  7475
@@ -694,8 +692,6 @@ Text Label 10450 3175 2    50   ~ 0
 UART_Rx
 Wire Wire Line
 	10450 2975 9825 2975
-Text Label 775  7000 0    50   ~ 0
-12V_switchable
 Wire Wire Line
 	775  7000 1400 7000
 Text Label 775  6900 0    50   ~ 0
@@ -1189,7 +1185,7 @@ U 1 1 5CFE0381
 P 2825 1950
 F 0 "J5" H 2931 2128 50  0000 C CNN
 F 1 "100A_Relay_Out" H 2931 2037 50  0000 C CNN
-F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 2825 1950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2825 1950 50  0001 C CNN
 F 3 "~" H 2825 1950 50  0001 C CNN
 	1    2825 1950
 	1    0    0    -1  
@@ -1314,8 +1310,6 @@ Wire Wire Line
 	1550 2675 1625 2675
 Wire Wire Line
 	1625 2675 1625 3025
-Text Label 775  6775 0    50   ~ 0
-100A_sense_H
 Wire Wire Line
 	5725 1025 5225 1025
 Wire Wire Line
@@ -1432,7 +1426,7 @@ U 1 1 5D143F25
 P 7575 4675
 F 0 "J7" H 7681 4953 50  0000 C CNN
 F 1 "Program" H 7681 4862 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7575 4675 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7575 4675 50  0001 C CNN
 F 3 "~" H 7575 4675 50  0001 C CNN
 	1    7575 4675
 	1    0    0    -1  
@@ -1447,4 +1441,14 @@ Wire Wire Line
 	7875 4450 7875 4575
 Wire Wire Line
 	7775 4675 8350 4675
+Text Label 775  6550 0    50   ~ 0
+24V_switchable
+Wire Wire Line
+	775  6550 1400 6550
+Text Label 775  7000 0    50   ~ 0
+100A_sense_L
+Wire Wire Line
+	1400 6775 775  6775
+Text Label 775  6775 0    50   ~ 0
+100A_sense_H
 $EndSCHEMATC

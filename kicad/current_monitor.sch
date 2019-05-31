@@ -17,62 +17,49 @@ $EndDescr
 $Comp
 L power:GND #PWR?
 U 1 1 5D5906DE
-P 2775 2875
+P 2775 2975
 AR Path="/5D5906DE" Ref="#PWR?"  Part="1" 
 AR Path="/5D58758C/5D5906DE" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 2775 2625 50  0001 C CNN
-F 1 "GND" H 2780 2702 50  0000 C CNN
-F 2 "" H 2775 2875 50  0001 C CNN
-F 3 "" H 2775 2875 50  0001 C CNN
-	1    2775 2875
+F 0 "#PWR030" H 2775 2725 50  0001 C CNN
+F 1 "GND" H 2780 2802 50  0000 C CNN
+F 2 "" H 2775 2975 50  0001 C CNN
+F 3 "" H 2775 2975 50  0001 C CNN
+	1    2775 2975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2775 2875 2775 2800
-$Comp
-L power:+5V #PWR?
-U 1 1 5D5906E5
-P 2775 2000
-AR Path="/5D5906E5" Ref="#PWR?"  Part="1" 
-AR Path="/5D58758C/5D5906E5" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 2775 1850 50  0001 C CNN
-F 1 "+5V" H 2790 2173 50  0000 C CNN
-F 2 "" H 2775 2000 50  0001 C CNN
-F 3 "" H 2775 2000 50  0001 C CNN
-	1    2775 2000
-	1    0    0    -1  
-$EndComp
+	2775 2975 2775 2900
 $Comp
 L Device:C C?
 U 1 1 5D5906EC
-P 3000 2125
+P 3000 2025
 AR Path="/5D5906EC" Ref="C?"  Part="1" 
 AR Path="/5D58758C/5D5906EC" Ref="C7"  Part="1" 
-F 0 "C7" V 2748 2125 50  0000 C CNN
-F 1 "100n" V 2839 2125 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 1975 50  0001 C CNN
-F 3 "~" H 3000 2125 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 0   0   50  0001 C CNN "Distributor_link"
-	1    3000 2125
+F 0 "C7" V 2748 2025 50  0000 C CNN
+F 1 "100n" V 2839 2025 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 1875 50  0001 C CNN
+F 3 "~" H 3000 2025 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 0   -100 50  0001 C CNN "Distributor_link"
+	1    3000 2025
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2850 2125 2775 2125
+	2850 2025 2775 2025
 Wire Wire Line
-	3150 2125 3200 2125
+	3150 2025 3200 2025
 Wire Wire Line
-	3200 2125 3200 2175
+	3200 2025 3200 2075
 $Comp
 L power:GND #PWR?
 U 1 1 5D5906F8
-P 3200 2175
+P 3200 2075
 AR Path="/5D5906F8" Ref="#PWR?"  Part="1" 
 AR Path="/5D58758C/5D5906F8" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 3200 1925 50  0001 C CNN
-F 1 "GND" H 3205 2002 50  0000 C CNN
-F 2 "" H 3200 2175 50  0001 C CNN
-F 3 "" H 3200 2175 50  0001 C CNN
-	1    3200 2175
+F 0 "#PWR031" H 3200 1825 50  0001 C CNN
+F 1 "GND" H 3205 1902 50  0000 C CNN
+F 2 "" H 3200 2075 50  0001 C CNN
+F 3 "" H 3200 2075 50  0001 C CNN
+	1    3200 2075
 	1    0    0    -1  
 $EndComp
 Text Notes 1850 1975 0    50   ~ 0
@@ -157,14 +144,11 @@ F 3 "" H 4500 3225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2875 2850 3600 2850
-Wire Wire Line
 	3600 3200 3600 2850
 Wire Wire Line
 	3600 3200 4275 3200
 Wire Wire Line
 	3600 2850 3675 2850
-Connection ~ 3600 2850
 Wire Wire Line
 	4500 2350 4500 2400
 Text Label 3250 2850 0    50   ~ 0
@@ -184,51 +168,35 @@ Text HLabel 3275 3850 2    50   Output ~ 0
 $Comp
 L Device:C C6
 U 1 1 5D592223
-P 2350 1100
-F 0 "C6" H 2465 1146 50  0000 L CNN
-F 1 "100n" H 2465 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2388 950 50  0001 C CNN
-F 3 "~" H 2350 1100 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 0   0   50  0001 C CNN "Distributor_link"
-	1    2350 1100
+P 4025 1100
+F 0 "C6" H 4140 1146 50  0000 L CNN
+F 1 "100n" H 4140 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4063 950 50  0001 C CNN
+F 3 "~" H 4025 1100 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/samsung-electro-mechanics/CL10B104KB8NNNC/1276-1000-1-ND/3889086" H 1675 0   50  0001 C CNN "Distributor_link"
+	1    4025 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 950  2350 800 
+	4025 950  4025 800 
 Wire Wire Line
-	2350 800  2525 800 
+	4025 1250 4025 1400
 Wire Wire Line
-	2350 1250 2350 1400
-Wire Wire Line
-	2350 1400 2525 1400
+	4025 1400 4200 1400
 $Comp
 L power:GND #PWR028
 U 1 1 5D592732
-P 2525 1400
-F 0 "#PWR028" H 2525 1150 50  0001 C CNN
-F 1 "GND" H 2530 1227 50  0000 C CNN
-F 2 "" H 2525 1400 50  0001 C CNN
-F 3 "" H 2525 1400 50  0001 C CNN
-	1    2525 1400
+P 4200 1400
+F 0 "#PWR028" H 4200 1150 50  0001 C CNN
+F 1 "GND" H 4205 1227 50  0000 C CNN
+F 2 "" H 4200 1400 50  0001 C CNN
+F 3 "" H 4200 1400 50  0001 C CNN
+	1    4200 1400
 	1    0    0    -1  
 $EndComp
-Connection ~ 2525 1400
+Connection ~ 4200 1400
 Wire Wire Line
-	2525 1400 2700 1400
-$Comp
-L power:+5V #PWR027
-U 1 1 5D5927B0
-P 2525 800
-F 0 "#PWR027" H 2525 650 50  0001 C CNN
-F 1 "+5V" H 2540 973 50  0000 C CNN
-F 2 "" H 2525 800 50  0001 C CNN
-F 3 "" H 2525 800 50  0001 C CNN
-	1    2525 800 
-	1    0    0    -1  
-$EndComp
-Connection ~ 2525 800 
-Wire Wire Line
-	2525 800  2700 800 
+	4200 1400 4375 1400
 Wire Wire Line
 	2875 4325 3400 4325
 Wire Wire Line
@@ -307,33 +275,11 @@ F 3 "" H 4300 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 3825 4300 3875
-$Comp
-L project_symbols:INA2181 U6
-U 1 1 5CEF2F87
-P 2875 2500
-F 0 "U6" H 3216 2521 50  0000 L CNN
-F 1 "INA2181" H 3216 2430 50  0000 L CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2875 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 2875 2500 50  0001 C CNN
-	1    2875 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L project_symbols:INA2181 U6
-U 2 1 5CEF3034
-P 2875 3850
-F 0 "U6" H 2775 4317 50  0000 C CNN
-F 1 "INA2181" H 2775 4226 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2875 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 2875 3850 50  0001 C CNN
-	2    2875 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2775 2000 2775 2125
+	2775 1900 2775 2025
 Wire Wire Line
-	2775 2125 2775 2200
-Connection ~ 2775 2125
+	2775 2025 2775 2100
+Connection ~ 2775 2025
 $Comp
 L Amplifier_Operational:TLV2372 U5
 U 1 1 5CF40941
@@ -359,12 +305,162 @@ $EndComp
 $Comp
 L Amplifier_Operational:TLV2372 U5
 U 3 1 5CF40CE9
-P 2800 1100
-F 0 "U5" H 2758 1146 50  0000 L CNN
-F 1 "TLV9062" H 2758 1055 50  0000 L CNN
-F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 2800 1100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv2375.pdf" H 2800 1100 50  0001 C CNN
-	3    2800 1100
+P 4475 1100
+F 0 "U5" H 4433 1146 50  0000 L CNN
+F 1 "TLV9062" H 4433 1055 50  0000 L CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 4475 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv2375.pdf" H 4475 1100 50  0001 C CNN
+	3    4475 1100
 	1    0    0    -1  
 $EndComp
+$Comp
+L project_symbols:INA4181 U6
+U 1 1 5CF3C5AA
+P 2875 2500
+F 0 "U6" H 3216 2546 50  0000 L CNN
+F 1 "INA4181" H 3216 2455 50  0000 L CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2875 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 2875 2500 50  0001 C CNN
+	1    2875 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L project_symbols:INA4181 U6
+U 2 1 5CF3C6C1
+P 2875 3850
+F 0 "U6" H 2775 4317 50  0000 C CNN
+F 1 "INA4181" H 2775 4226 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2875 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 2875 3850 50  0001 C CNN
+	2    2875 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L project_symbols:INA4181 U6
+U 4 1 5CF3C7FC
+P 3125 5200
+F 0 "U6" H 3025 5667 50  0000 C CNN
+F 1 "INA4181" H 3025 5576 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3125 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 3125 5200 50  0001 C CNN
+	4    3125 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L project_symbols:INA4181 U6
+U 3 1 5CF3C8D7
+P 3050 6100
+F 0 "U6" H 2950 6567 50  0000 C CNN
+F 1 "INA4181" H 2950 6476 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3050 6100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 3050 6100 50  0001 C CNN
+	3    3050 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3425 5200
+NoConn ~ 3350 6100
+Wire Wire Line
+	2875 2850 3600 2850
+Connection ~ 3600 2850
+Wire Wire Line
+	4025 800  4200 800 
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5CF2766F
+P 2775 1900
+F 0 "#PWR0105" H 2775 1750 50  0001 C CNN
+F 1 "+3.3V" H 2790 2073 50  0000 C CNN
+F 2 "" H 2775 1900 50  0001 C CNN
+F 3 "" H 2775 1900 50  0001 C CNN
+	1    2775 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5CF277AC
+P 4200 800
+F 0 "#PWR0106" H 4200 650 50  0001 C CNN
+F 1 "+3.3V" H 4215 973 50  0000 C CNN
+F 2 "" H 4200 800 50  0001 C CNN
+F 3 "" H 4200 800 50  0001 C CNN
+	1    4200 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 800 
+Wire Wire Line
+	4200 800  4375 800 
+$Comp
+L power:GND #PWR?
+U 1 1 5CF2A0C1
+P 3125 5600
+AR Path="/5CF2A0C1" Ref="#PWR?"  Part="1" 
+AR Path="/5D58758C/5CF2A0C1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3125 5350 50  0001 C CNN
+F 1 "GND" H 3130 5427 50  0000 C CNN
+F 2 "" H 3125 5600 50  0001 C CNN
+F 3 "" H 3125 5600 50  0001 C CNN
+	1    3125 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 5600 3125 5550
+$Comp
+L power:GND #PWR?
+U 1 1 5CF2A743
+P 3050 6500
+AR Path="/5CF2A743" Ref="#PWR?"  Part="1" 
+AR Path="/5D58758C/5CF2A743" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 6250 50  0001 C CNN
+F 1 "GND" H 3055 6327 50  0000 C CNN
+F 2 "" H 3050 6500 50  0001 C CNN
+F 3 "" H 3050 6500 50  0001 C CNN
+	1    3050 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6450 3050 6500
+$Comp
+L power:GND #PWR?
+U 1 1 5CF2AE3F
+P 2475 6250
+AR Path="/5CF2AE3F" Ref="#PWR?"  Part="1" 
+AR Path="/5D58758C/5CF2AE3F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2475 6000 50  0001 C CNN
+F 1 "GND" H 2480 6077 50  0000 C CNN
+F 2 "" H 2475 6250 50  0001 C CNN
+F 3 "" H 2475 6250 50  0001 C CNN
+	1    2475 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2475 6000 2550 6000
+Wire Wire Line
+	2550 6200 2475 6200
+Wire Wire Line
+	2475 6000 2475 6200
+Connection ~ 2475 6200
+Wire Wire Line
+	2475 6200 2475 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5CF2BEBE
+P 2525 5375
+AR Path="/5CF2BEBE" Ref="#PWR?"  Part="1" 
+AR Path="/5D58758C/5CF2BEBE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2525 5125 50  0001 C CNN
+F 1 "GND" H 2530 5202 50  0000 C CNN
+F 2 "" H 2525 5375 50  0001 C CNN
+F 3 "" H 2525 5375 50  0001 C CNN
+	1    2525 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 5375 2525 5300
+Wire Wire Line
+	2525 5100 2625 5100
+Wire Wire Line
+	2625 5300 2525 5300
+Connection ~ 2525 5300
+Wire Wire Line
+	2525 5300 2525 5100
 $EndSCHEMATC
