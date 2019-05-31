@@ -33,7 +33,7 @@ U 1 1 5CD5C49C
 P 2625 3025
 F 0 "F3" V 2462 3025 50  0000 C CNN
 F 1 "Fuse 1A, Littelfuse Inc. 39211000000" V 2536 3025 28  0000 C CNN
-F 2 "Fuse:Fuse_Littelfuse_395Series" V 2555 3025 50  0001 C CNN
+F 2 "footprints:Fuse_Holder" V 2555 3025 50  0001 C CNN
 F 3 "" H 2625 3025 50  0001 C CNN
 F 4 "https://www.digikey.de/product-detail/de/39211000000/F5499CT-ND/3306889/?itemSeq=293785594" H 2625 3025 50  0001 C CNN "Distributor_link"
 	1    2625 3025
